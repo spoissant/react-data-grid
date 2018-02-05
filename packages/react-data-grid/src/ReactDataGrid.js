@@ -156,6 +156,9 @@ class ReactDataGrid extends React.Component {
     } else {
       initialState.selected = {rowIdx: -1, idx: -1};
     }
+    if(props.canFilter){
+      initialState.canFilter = props.canFilter;
+    }
     this.state = initialState;
   }
 
